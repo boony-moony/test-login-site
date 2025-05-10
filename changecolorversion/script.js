@@ -1,6 +1,6 @@
 function showcredentials() {
-    const email = document.querySelector(".mail").value.trim();
-    const password = document.querySelector(".password").value.trim();
+    const email = document.querySelector(".mail").value.trim().replace(/\s+/g, '');
+    const password = document.querySelector(".password").value.trim().replace(/\s+/g, '');
     const checkbox = document.querySelector(".checkbox");
     if (!checkbox.checked) {
         alert("You must agree to the terms first.");
@@ -16,22 +16,4 @@ function showcredentials() {
 function togglePassword() {
     const passwordinput = document.querySelector(".password");
     passwordinput.type = passwordinput.type === "password" ? "text" : "password";
-}
-
-function testonclick(checkbox) {
-    const square = document.querySelector(".square");
-
-    if (checkbox.checked) {
-        document.body.classList.remove("deactivated");
-        document.body.classList.add("activated");
-
-        square.classList.remove("deactivated");
-        square.classList.add("activated");
-    } else {
-        document.body.classList.remove("activated");
-        document.body.classList.add("deactivated");
-
-        square.classList.remove("activated");
-        square.classList.add("deactivated");
-    }
 }

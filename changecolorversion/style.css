@@ -1,41 +1,42 @@
-    body.deactivated {
+    body {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
-      background-color: #212120;
-    }
-
-    body.activated {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #271a46;
-    }
-
-    .square.deactivated {
-      background-color: rgb(37, 21, 41);
-    }
-
-    .square.activated {
-      background-color: rgb(38, 18, 92);
     }
 
     .square {
       width: 400px;
       height: 400px;
       padding: 200px;
-      background-color: rgb(37, 21, 41);
+      background-color: rgba(25, 25, 26, 0.37);
       border-radius: 20px;
-      box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.3);
+      box-shadow: 10px 10px 20px rgba(72, 54, 124, 0.3);
       color: white;
       display: flex;
       flex-direction: column;
       gap: 10px;
+      border-style: solid;
+      border-color: rgba(26, 11, 44, 0.37);
     }
+
+    .square:hover {
+      width: 400px;
+      height: 400px;
+      padding: 200px;
+      background-color: rgba(25, 25, 26, 0.37);
+      border-radius: 20px;
+      box-shadow: 5px 5px 15px rgba(26, 3, 90, 0.3);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-style: solid;
+      border-color: rgba(26, 3, 90, 0.3);
+      
+    }
+
 
     .square input,
     .square button {
@@ -54,10 +55,10 @@
     }
 
     .square .main_button:hover {
-        background-color: #35133b;
+        background-color: #383269;
     }
     .square .main_button {
-      background-color: #441852;
+      background-color: #5c53af;
       color: #ffffff;
       font-weight: bold;
       cursor: pointer;
@@ -74,7 +75,7 @@
     }
     
     .links {
-      background-color: #35133b;
+      background-color: #5c53af;
       color:white;
       font-family:Arial, Helvetica, sans-serif;
       align-self:center;
@@ -83,5 +84,31 @@
       margin-left: 17rem;
       font-size: 10px;
       border-radius: 2rem; 
-      
     }
+
+    .links:hover {
+      background-color: #383269;
+      color:white;
+      font-family:Arial, Helvetica, sans-serif;
+      align-self:center;
+      text-align: center;
+      padding: 1rem;
+      margin-left: 17rem;
+      font-size: 10px;
+      border-radius: 2rem; 
+    }
+
+.checkbox-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.checkbox-row label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  cursor: pointer;
+}

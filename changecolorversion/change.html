@@ -9,28 +9,21 @@
 </head>
 
 
-<body class="deactivated">
+<body class="deactivated" style="background-image: url(5376788.jpg); background-repeat: no-repeat; background-size: cover;">
   <div class="square">
     <p class="main">Login</p>
     <input class="mail" type="email" placeholder="Enter your gmail">
     <input class="password" type="password" placeholder="Enter your password">
 
-    <label>
-        <input type="checkbox" onclick="togglePassword()"> Show Password
-    </label>
+  <div class="checkbox-row">
+    <label><input type="checkbox" onclick="togglePassword()"> Show Password</label>
+    <label><input type="checkbox" class="checkbox"> Agree to TOS!</label>
+  </div>
 
-    <label>
-         <input type="checkbox" class="checkbox">Agree to Tos!
-    </label>
 
     <button onclick="showcredentials()" class="main_button">Create account</button>
 
     <a style="text-decoration: none" class="links" href="../index.html">Go back to main site</a>
-
-    <label>
-        <input onchange="testonclick(this)" type="checkbox" class="testcheckbox">Test
-    </label>
   </div>
-
 </body>
 </html>
