@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta  charset="UTF-8">
+    <title>Login site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+
+<body class="deactivated">
+  <div class="square">
+    <p class="main">Login</p>
+    <input class="mail" type="email" placeholder="Enter your gmail">
+    <input class="password" type="password" placeholder="Enter your password">
+
+    <label>
+        <input type="checkbox" onclick="togglePassword()"> Show Password
+    </label>
+
+    <label>
+         <input type="checkbox" class="checkbox">Agree to Tos!
+    </label>
+
+    <button onclick="showcredentials()" class="main_button">Create account</button>
+
+    <a style="text-decoration: none" class="links" href="../index.html">Go back to main site</a>
+
+    <label>
+        <input onchange="testonclick(this)" type="checkbox" class="testcheckbox">Test
+    </label>
+  </div>
+
+</body>
+</html>
